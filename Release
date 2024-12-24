@@ -1,8 +1,9 @@
-Origin: <Your Repo’s Name>
-Label: <Your Repository’s Label >
+Origin: kiril_bk's Repo
+Label: kiril_bk's Repo
 Suite: stable
 Version: 1.0
-Codename: cydia-ios
-Architectures: iphoneos-arm
+Codename: kiril_bk
+Architectures: iphoneos-arm iphoneos-arm64
 Components: main
-Description: <Your Repo’s Display Name>
+Description: kiril_bk's Jailbreak Repository
+Icon: file://CydiaIcon.png
