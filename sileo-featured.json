@@ -1,0 +1,13 @@
+{  
+   "class":"FeaturedBannersView",
+   "itemSize":"{263, 148}",
+   "itemCornerRadius":10,
+   "banners":[  
+      {  
+         "url":"https://doiko35.github.io/kirilbk/depictions/ru.rj.haptickeys/screenshots/Banner.png",
+         "title":"HapticKeys",
+         "package":"ru.rj.haptickeys",
+         "hideShadow":false
+      },
+   ]
+}

@@ -1,16 +1,20 @@
 Package: ru.rj.haptickeys
 Version: 4.4
 Architecture: iphoneos-arm64
-Maintainer: rj
-Installed-Size: 33178
-Depends: firmware (>=7.0)
-Filename: ./debs/ru.rj.haptickeys_4.4.deb
-Size: 33178
-MD5sum: 3822D9C3E1F4B8CE229D3630C536D303
-SHA1: 63F179BDD87B1EFE9C0888EA9D8E449B8CE2738E
-SHA256: A07EA14E34E926AE2488661ECC7159D589C1F224B4CF89381BE31E8A2A390D1B
-Section: System
-Description: Taptic feedback on keyboard presses
-Tag: role::developer
-Author: rj
+Maintainer: RJ
+Installed-Size: 33188
+Depends: firmware(>= 13.0), mobilesubstrate, preferenceloader, org.thebigboss.libcolorpicker
+Filename: ./debs/ru.rj.haptickeys.deb
+Size: 33188
+MD5sum: 3822d9c3e1f4b8ce229d3630c536d303
+SHA1: 63f179bdd87b1efe9c0888ea9d8e449b8ce2738e
+SHA256: fd76b34e323158418a626ae61134f67b5ad7a7df58aa7d6fcb8cbbd1432f9ef3
+Section: Tweaks
+Priority: optional
+Description: Taptic feedback on keyboard presses.
+Tag: purpose::extension, compatible::ios13, compatible::ios14, compatible::ios15
+Author: RJ
+Dev: afnanahmad
+Icon: file:///Library/PreferenceBundles/ChromaHomeBarX.bundle/chroma@2x.png
 Name: HapticKeys
+Sponsor: RJ
