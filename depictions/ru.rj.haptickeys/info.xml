@@ -1,0 +1,14 @@
+<package>
+	<id>ru.rj.haptickeys</id>
+	<name>HapticKeys</name>
+	<version>4.4</version>
+	<compatibility>
+		<firmware>
+			<miniOS>13.X - 15.X</miniOS>
+		</firmware>
+	</compatibility>
+	<shortDescription>Taptic feedback on keyboard presses.</shortDescription>
+	<descriptionlist>
+		<description>Taptic feedback on keyboard presses.</description>	
+	</descriptionlist>
+</package>

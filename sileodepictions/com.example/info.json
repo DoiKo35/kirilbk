@@ -1,0 +1,90 @@
+{
+    "class": "DepictionTabView",
+    "minVersion": "1.1",
+    "headerImage": "https://doiko35.github.io/kirilbk/depictions/ru.rj.haptickeys/screenshots/Banner.png",
+    "tintColor": "#007AFF",
+    "tabs": [
+        {
+            "tabname": "Details",
+            "class": "DepictionStackView",
+            "views": [
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Taptic feedback on keyboard presses.",
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionScreenshotsView",
+                    "itemSize": "{160, 346}",
+                    "screenshots": [
+                        {
+                            "url": "https://doiko35.github.io/kirilbk/depictions/ru.rj.haptickeys/screenshots/HapticKeys_1.png",
+                            "accessibilityText": "Screenshot 1"
+                        },
+                        {
+                            "url": "https://doiko35.github.io/kirilbk/depictions/ru.rj.haptickeys/screenshots/HapticKeys_2.png",
+                            "accessibilityText": "Screenshot 2"
+                        },
+                        {
+                            "url": "https://doiko35.github.io/kirilbk/depictions/ru.rj.haptickeys/screenshots/HapticKeys_3.png",
+                            "accessibilityText": "Screenshot 3"
+                        },
+                        {
+                            "url": "https://doiko35.github.io/kirilbk/depictions/ru.rj.haptickeys/screenshots/HapticKeys_4.png",
+                            "accessibilityText": "Screenshot 4"
+                        }
+                    ]
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "Compatible with iOS 13.0+ (Rootless & Rootful)",
+                    "useBoldText": true,
+                    "useSpacing": true
+                },
+                {
+                    "class": "DepictionSeparatorView"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Version",
+                    "text": "4.4"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Released",
+                    "text": "28-04-2026"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Price",
+                    "text": "Free"
+                },
+                {
+                    "class": "DepictionTableTextView",
+                    "title": "Developer",
+                    "text": "RJ"
+                },
+                {
+                    "spacing": 16,
+                    "class": "DepictionSpacerView"
+                }
+            ]
+        },
+        {
+            "tabname": "Changelog",
+            "class": "DepictionStackView",
+            "views": [
+                {
+                    "class": "DepictionSubheaderView",
+                    "title": "Version 4.4",
+                    "useBoldText": true
+                },
+                {
+                    "class": "DepictionMarkdownView",
+                    "markdown": "• Initial release on your custom repository\n• Optimized haptic engine response time\n• Full support for iOS 15-17",
+                    "useSpacing": true
+                }
+            ]
+        }
+    ]
+}
