@@ -5,9 +5,9 @@
    "banners":[  
       {  
          "url":"https://doiko35.github.io/kirilbk/depictions/ru.rj.haptickeys/screenshots/Banner.png",
-         "title":"HapticKeys",
+         "title":" ",
          "package":"ru.rj.haptickeys",
-         "hideShadow":false
+         "hideShadow":true
       },
    ]
 }
