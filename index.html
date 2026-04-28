@@ -1,11 +1,243 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>kiril_bk Repo</title>
+  <link rel="stylesheet" href="https://unpkg.com/7.css">
+  <style>
+    /* Базовые настройки фона */
+    body {
+      margin: 0;
+      background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/499d9777-2871-4b64-965a-301163d3a695/dew43iw-89c2f4ba-e165-4590-ba13-cbe5c26254de.jpg/v1/fill/w_1131,h_707,q_70,strp/windows_7_logon_screen_wallpaper_official_highres_by_fantomnotphantom_dew43iw-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6Ii9mLzQ5OWQ5Nzc3LTI4NzEtNGI2NC05NjVhLTMwMTE2M2QzYTY5NS9kZXc0M2l3LTg5YzJmNGJhLWUxNjUtNDU5MC1iYTEzLWNiZTVjMjYyNTRkZS5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.pVbgpPxq9UubbUbnrYzMOwMFk4cNuLxlIqTuspew-xk');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+	  /* Запрет выделения текста */
+	  -webkit-user-select: none; /* Safari */
+	  -ms-user-select: none;      /* IE 10+ */
+	  user-select: none;         /* Стандарт для Chrome, Firefox, Opera */
+    }
+	
+	img {
+	  /* Запрет перетаскивания картинок (часто делается вместе с запретом выделения) */
+	  -webkit-user-drag: none;
+	  user-drag: none;
+	}
 
+    /* Основное окно */
+    .window {
+      width: 600px;
+      min-height: 450px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    /* Контейнер для контента с прокруткой */
+    .scroll-container {
+      background: #fff;
+      border: 1px solid #8E8F8F;
+      margin-top: -1px;
+      height: 320px;
+      overflow-y: auto;
+      padding: 15px;
+    }
+
+    /* Стилизация списка твиков */
+    .tweak-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .tweak-entry {
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px double #e0e0e0;
+    }
+
+    .tweak-entry:last-child {
+      border-bottom: none;
+    }
+
+    .tweak-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .tweak-badge {
+      font-size: 10px;
+      background: #f0f0f0;
+      border: 1px solid #ccc;
+      padding: 1px 5px;
+      border-radius: 3px;
+      font-weight: normal;
+    }
+
+    .tweak-desc {
+      padding-left: 26px;
+      font-size: 12px;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    /* Нижняя панель */
+    .footer-bar {
+      margin-top: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Кнопки действий */
+    .repo-actions {
+      display: flex;
+      gap: 5px;
+	  margin-bottom: 10px;
+	  margin-right: 6px;
+    }
+
+    /* Благодарности */
+    .credits-box {
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    .credits-name {
+      color: #0066cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
 <body>
-	<h1>kiril_bk's Repo</h1>
-	<a href="cydia://url/https://cydia.saurik.com/api/share#?source=https://github.com/DoiKo35/kiril_bk">Add to Cydia</a><br><br>
-	<a href="sileo://source/https://github.com/DoiKo35/kiril_bk">Add to Sileo</a><br><br>
-	<a href="zbra://sources/add/https://github.com/DoiKo35/kiril_bk">Add to Zebra</a>
-</body>
 
+<div class="window active">
+  <div class="title-bar">
+    <div class="title-bar-text">C:\Users\kiril_bk\Desktop\Repository</div>
+    <div class="title-bar-controls">
+      <button aria-label="Minimize"></button>
+      <button aria-label="Maximize"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+
+  <div class="window-body">
+    <menu role="tablist">
+      <button role="tab" aria-selected="true" aria-controls="pane-tweaks">Main Tweaks</button>
+      <button role="tab" aria-selected="false" aria-controls="pane-credits">Credits</button>
+      <button role="tab" aria-selected="false" aria-controls="pane-social">Social</button>
+    </menu>
+
+    <div class="scroll-container">
+      
+      <section id="pane-tweaks" role="tabpanel">
+		<img src="https://github.com/DoiKo35/kirilbk/blob/main/icon.png?raw=true" style="height: 120px;">
+        <p>Welcome to <strong>kiril_bk Repo</strong> main page!</p>
+		<br>
+		<p>This repo was created on <strong>November 8, 2024</strong>, and is already running:</p>
+		<div id="time-counter" class="status-bar-field" style="padding: 5px; font-weight: bold;">
+			Calculating...
+		</div>
+      </section>
+
+      <section id="pane-credits" role="tabpanel" hidden>
+        <fieldset class="credits-box">
+          <legend>Legacy & Support</legend>
+          <p>Special thanks to the developers who made these tools possible:</p>
+          <ul>
+            <li><span class="credits-name">khang-nd</span> — Author of the 7.css framework used here.</li>
+          </ul>
+        </fieldset>
+      </section>
+
+      <section id="pane-social" role="tabpanel" hidden>
+        <p>Connect with me for updates and support:</p>
+        <div class="field-row">
+          <button onclick="window.open('https://github.com/DoiKo35')">GitHub</button>
+          <button onclick="window.open('https://t.me/kiril_bk2')">Telegram</button>
+		  <br>
+        </div>
+      </section>
+    </div>
+
+    <div class="footer-bar">
+      <div class="status-bar">
+        <p class="status-bar-field">Status: Online</p>
+        <p class="status-bar-field">v1.0.1</p>
+      </div>
+      <div class="repo-actions">
+        <button class="default" onclick="location.href='sileo://source/https://doiko35.github.io/kirilbk'">Add to Sileo</button>
+        <button onclick="location.href='zbra://sources/add/https://doiko35.github.io/kirilbk'">Add to Zebra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Логика переключения вкладок
+  const tabs = document.querySelectorAll('button[role="tab"]');
+  const panels = document.querySelectorAll('section[role="tabpanel"]');
+  
+  function updateCounter() {
+    // Установи здесь дату начала (Год, Месяц [0-11], День, Час, Минуты, Секунды)
+    // Внимание: месяцы в JS начинаются с 0 (0 - январь, 1 - февраль и т.д.)
+    const startDate = new Date(2024, 10, 8, 0, 0, 0); 
+    const now = new Date();
+
+    let years = now.getFullYear() - startDate.getFullYear();
+    let months = now.getMonth() - startDate.getMonth();
+    let days = now.getDate() - startDate.getDate();
+    let hours = now.getHours() - startDate.getHours();
+    let minutes = now.getMinutes() - startDate.getMinutes();
+    let seconds = now.getSeconds() - startDate.getSeconds();
+
+    // Корректировка отрицательных значений
+    if (seconds < 0) { seconds += 60; minutes--; }
+    if (minutes < 0) { minutes += 60; hours--; }
+    if (hours < 0) { hours += 24; days--; }
+    
+    if (days < 0) {
+      const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+      days += prevMonth.getDate();
+      months--;
+    }
+    if (months < 0) {
+      months += 12;
+      years--;
+    }
+
+    // Форматируем вывод
+    const timeString = `${years}y ${months}m ${days}d ${hours}h ${minutes}m ${seconds}s`;
+    
+    // Вставляем текст в блок
+    document.getElementById('time-counter').innerText = timeString;
+  }
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.getAttribute('aria-controls');
+
+      // Сбрасываем табы
+      tabs.forEach(t => t.setAttribute('aria-selected', 'false'));
+      tab.setAttribute('aria-selected', 'true');
+
+      // Переключаем панели
+      panels.forEach(p => {
+        p.hidden = (p.id !== target);
+      });
+    });
+  });
+  
+  setInterval(updateCounter, 1000);
+  updateCounter();
+</script>
+
+</body>
 </html>
